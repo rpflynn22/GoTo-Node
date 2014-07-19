@@ -32,7 +32,7 @@ var goToModel = Model({
 /** The GoTo Object methods */
 
 goToModel.statics.allUsers = function(gname, cb){
-  Goto.find({"name": gname}, cb);
+  Group.find({"name": gname}, cb);
 };
 
 var Goto = mongoose.model('GoTo', goToModel);
